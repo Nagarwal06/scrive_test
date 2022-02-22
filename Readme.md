@@ -38,20 +38,19 @@ Page specific objects → are the libraries having specific page functionalitite
 
 
 ###### Step-by-step guide to run test using cmd:
-
-Make sure all necessary packages are installed.
-Change the DRIVER_LOCATION constant variable as per your driver installed location. 
-Open cmd as in administrator mode.
-Change the directory to project path i.e, scrive_test -> cd scrive_test
-Run the command "python testcases\signed_document_test.py"
-Wait for test to complete and see result in command prompt.
+* Make sure all necessary packages are installed.
+* Change the DRIVER_LOCATION constant variable as per your driver installed location. 
+* Open cmd as in administrator mode.
+* Change the directory to project path i.e, scrive_test -> cd scrive_test
+* Run the command "python testcases\signed_document_test.py"
+* Wait for test to complete and see result in command prompt.
 
 
 ###### Step-by-step guide to run test on linux
 
-Make sure all necessary packages are installed.
-	- chromedriver, google-chrome, python3, pip3, selenium
-Open terminal as a root user.
-Change the directory to project path i.e, scrive_test -> cd scrive_test
-Run the command "python3 testcases\signed_document_test.py"
-Wait for test to complete and see result in command prompt.
+* Make sure all necessary packages are installed.
+  * chromedriver, google-chrome, python3, pip3, selenium
+* Open terminal as a root user.
+* Change the directory to project path i.e, scrive_test -> cd scrive_test
+* Run the command "python3 testcases\signed_document_test.py"
+* Wait for test to complete and see result in command prompt.
