@@ -21,15 +21,15 @@ def driver_chrome(driver_name, driver_loc="C:/Users/chromedriver"):
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
         chrome_options.add_argument('--ignore-certificate-errors')
-        driver = webdriver.Chrome(driver_loc, options=chrome_options)
+        driver = webdriver.Chrome(executable_path=driver_loc, options=chrome_options)
         driver.maximize_window()
     elif driver_name == 'firefox':
         firefox_options = Firefox_Options()
-        driver = webdriver.Firefox(driver_loc, options=firefox_options)
+        driver = webdriver.Firefox(executable_path=driver_loc, options=firefox_options)
     elif driver_name == 'safari':
-        driver = webdriver.Safari(driver_loc)
+        driver = webdriver.Safari(executable_path=driver_loc)
     elif driver_name == 'ie':
-        driver = webdriver.Ie(driver_loc)
+        driver = webdriver.Ie(executable_path=driver_loc)
     else:
         raise EnvironmentError("""Driver name did not match allowed options.
         Allowed Options: ["chrome", "firefox", "safari", "ie"]
